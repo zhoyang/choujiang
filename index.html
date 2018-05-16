@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>抽奖</title>
+    <link rel="stylesheet" href="css/sytle.css">
+    <script type="text/javascript">
+    new function (){
+       var _self = this;
+       _self.width = 1920;//设置默认最大宽度
+       _self.fontSize = 100;//默认字体大小
+       _self.widthProportion = function(){var p = (document.body&&document.body.clientWidth||document.getElementsByTagName("html")[0].offsetWidth)/_self.width;return p>1?1:p<0.32?0.32:p;};
+       _self.changePage = function(){
+           document.getElementsByTagName("html")[0].setAttribute("style","font-size:"+_self.widthProportion()*_self.fontSize+"px !important");
+       }
+       _self.changePage(); 
+       window.addEventListener('resize',function(){_self.changePage();},false);
+    };
+    </script>
+
+</head>
+<body>
+<div id="box">
+    <div id="nav">
+        <img src="img/icon_01.png" alt="">
+    </div>
+    <div id="thead">
+        <img src="img/icon_02.png" alt="">
+    </div>
+    <div id="tbody">
+            <!--<div class="headerWrapper container-fluid"></div>-->
+            <main id="ddd">
+                <div class="draw" id="lottery">
+                    <table>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-0">
+                                <img src="img/icon_05.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-1">
+                                <img src="img/icon_07.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-2">
+                                <img src="img/icon_09.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-3">
+                                <img src="img/icon_11.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-11">
+                                <img src="img/icon_17.png" alt="">
+                            </td>
+                            <td style="background:none" class="item" colspan="2"rowspan="2">
+                                <button class="draw-btn">
+                                    <img src="img/icon_20.png" alt="">
+                                    <p>剩余<span>1</span>次抽奖机会</p>
+                                </button>
+                            </td>
+                            <!--<td class="gap"></td>-->
+                            <td class="item lottery-unit lottery-unit-4">
+                                <img src="img/icon_09.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-10">
+                                <img src="img/icon_21.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-5">
+                                <img src="img/icon_22.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-9">
+                                <img src="img/icon_28.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-8">
+                                <img src="img/icon_30.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-7">
+                                <img src="img/icon_26.png" alt="">
+                            </td>
+                            <td class="item lottery-unit lottery-unit-6">
+                                <img src="img/icon_27.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        <div class="zjxx">
+            <h1>最近中间的投资者</h1>
+            <div class="myscroll">
+                <ul>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                    <li>2017-10-09 <span>17:12</span> 用户李**获得iPhone8+免费操盘 <span>已派奖</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="jp">
+            <h1 class="kuai">奖品包含</h1>
+            <p style="margin-top: 0.66rem">五等奖：苹果IPhone8 一部/免息卷（10天）</p>
+            <p>四等奖：苹果IPhone8 一部 免息卷10天，由公司提供每日1只内参牛股（5个交易日）</p>
+            <p>三等奖：MacBook Pro 13.3英寸 Bro 一台，免息卷（10天）提供每日2只内参牛股（5个交易日）</p>
+            <p>二等奖：MacBook Pro 13.3英寸 Bro 一台/苹果IPhone8 一部/免息卷（10天）/提供每日3只内参牛股（10<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个交易日）</p>
+            <p>一等奖：台式苹果Mac G5 M9592CH/A 一台/苹果IPhone8 一部/免息卷（5天）/由公司提供每日3只内参牛<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股（15个交易日）</p>
+            <p style="padding-bottom:0.3rem">特等奖：专用炒股电脑三星UD55A一台/免息卷（5天）/专业股票经纪人一对一全程指导操作（10个交易日）</p>
+        </div>
+        <div class="cj">
+            <h1 class="kuai">抽奖规则</h1>
+            <ul>
+                <li>1、&nbsp;&nbsp;新注册用户免费赢取一次抽奖奖励</li>
+                <li>2、&nbsp;&nbsp;单笔方案保证金 &nbsp;&nbsp;&nbsp;3000&nbsp;&nbsp;&nbsp; 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>3、&nbsp;&nbsp;单笔方案保证金 &nbsp;&nbsp;20000&nbsp;&nbsp; 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>4、&nbsp;&nbsp;单笔方案保证金 &nbsp;&nbsp;50000 &nbsp;&nbsp;元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>5、&nbsp;&nbsp;单笔方案保证金 &nbsp;100000&nbsp; 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>6、&nbsp;&nbsp;单笔方案保证金 &nbsp;200000 &nbsp;元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>7、&nbsp;&nbsp;单笔方案保证金 &nbsp;500000&nbsp; 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>8、&nbsp;&nbsp;单笔方案保证金 1000000 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>9、&nbsp;&nbsp;单笔方案保证金 1500000 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li>10、单笔方案保证金 3000000 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+                <li style="padding-bottom:0.3rem">11、单笔方案保证金 3500000 元申请配资，无限制倍数，通过方案免费赢取一次抽奖奖励</li>
+            </ul>
+        </div>
+        <div class="lj">
+            <h1 class="kuai">奖品领取规则</h1>
+            <div class="lja">
+                <p style="margin-top: 0.65rem">1、iphone8 或苹果电脑：用户中间的三个工作日内由顶牛贷工作人员与用户确认中奖情况并且将奖品寄出！</p>
+                <p>2、助力红包：抽奖即可获得，直接打到用户的配资账户</p>
+                <p>3、免息卷：抽奖即可获得，用于用户配资申请方案通过后延长超盘时间</p>
+                <p>4、①内参牛股：用户中奖后，由公司每日提供股票（股票是内参股票不做任何保证）②提供股票：股票经纪<br>人全程知道操盘</p>
+                <p style="margin-top: 0.57rem">奖品说明：</p>
+                <p>1、IPone8中奖数量1台。</p>
+                <p>2、助力红包、免息卷：数量不限</p>
+                <div style="margin-top: 0.58rem;padding-bottom:0.3rem"">
+                    本活动最终解释权归顶牛贷配资官网所有，如有疑问请通过在线客服或在线咨询！
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- <div id="xx">
+    
+</div> -->
+<div id='info' style = "display : none">
+    <a id="xa" style="width: 100%;height: 100%;display: block;"></a><br>
+
+</div>
+<script>
+
+</script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/layer.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+        $('.myscroll').myScroll({
+            speed: 40, //数值越大，速度越慢
+            rowHeight: 57 //li的高度
+        });
+    });
+
+    var lottery = {
+        index: -1, //当前转动到哪个位置，起点位置
+        count: 0, //总共有多少个位置
+        timer: 0, //setTimeout的ID，用clearTimeout清除
+        speed: 20, //初始转动速度
+        times: 0, //转动次数
+        cycle: 20, //转动基本次数：即至少需要转动多少次再进入抽奖环节
+        prize: -1, //中奖位置
+        init: function(id) {
+            if($('#' + id).find('.lottery-unit').length > 0) {
+                $lottery = $('#' + id);
+                $units = $lottery.find('.lottery-unit');
+                this.obj = $lottery;
+                this.count = $units.length;
+                $lottery.find('.lottery-unit.lottery-unit-' + this.index).addClass('active');
+            };
+        },
+        roll: function() {
+            var index = this.index;
+            var count = this.count;
+            var lottery = this.obj;
+            $(lottery).find('.lottery-unit.lottery-unit-' + index).removeClass('active');
+            index += 1;
+            if(index > count - 1) {
+                index = 0;
+            };
+            $(lottery).find('.lottery-unit.lottery-unit-' + index).addClass('active');
+            this.index = index;
+            return false;
+        },
+        stop: function(index) {
+            this.prize = index;
+            return false;
+        }
+    };
+    var td=$('tr td')
+    console.log(td)
+        function asd(){
+         console.log(1)
+        $('#layui-m-layer0').remove();
+         $('.layui-m-layermain').remove();
+          $('.layui-m-layersection').remove();
+           $('.layui-m-layerchild').remove();
+           $('.layui-m-layercont').remove();
+           $('#img1').remove();
+           $('#btn').remove();
+                }
+    function roll() {
+        lottery.times += 1;
+        lottery.roll(); //转动过程调用的是lottery的roll方法，这里是第一次调用初始化
+        if(lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {
+            clearTimeout(lottery.timer);
+            layer.open({
+                type: 1,
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['893px', '600px'],
+                content: $("#info").html()
+            });
+            lottery.prize = -1;
+            lottery.times = 0;
+            click = false;
+        } else {
+            if(lottery.times < lottery.cycle) {
+                lottery.speed -= 10;
+            } else if(lottery.times == lottery.cycle) {
+                var index = Math.random() * (lottery.count) | 0; //静态演示，随机产生一个奖品序号，实际需请求接口产生
+                lottery.prize = index;
+                console.log(index);
+                if(index==0){
+                    $('#xa').append('<img id="img1" src="img/icon_05.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==1) {
+                     $('#xa').append('<img id="img1" src="img/icon_07.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                 }else if (index==2) {
+                     $('#xa').append('<img id="img1" src="img/icon_09.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==3) {
+                      $('#xa').append('<img id="img1" src="img/icon_11.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==4) {
+                     $('#xa').append('<img id="img1" src="img/icon_09.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==5) {
+                      $('#xa').append('<img id="img1" src="img/icon_22.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==6) {
+                     $('#xa').append('<img id="img1" src="img/icon_27.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==7) {
+                     $('#xa').append('<img id="img1" src="img/icon_26.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==8) {
+                     $('#xa').append('<img id="img1" src="img/icon_30.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==9) {
+                     $('#xa').append('<img id="img1" src="img/icon_28.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==10) {
+                     $('#xa').append('<img id="img1" src="img/icon_21.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }else if (index==11) {
+                     $('#xa').append('<img id="img1" src="img/icon_17.png"/><button id="btn" onclick="asd()">恭喜中奖。点击关闭</button>')
+                }
+              
+                     // $('.layui-m-layermain').click(function(){
+                     //     $('.layui-m-layermain').remove();
+                     //     })
+            } else {
+                if(lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {
+                    lottery.speed += 110;
+                } else {
+                    lottery.speed += 20;
+                }
+            }
+            if(lottery.speed < 40) {
+                lottery.speed = 40;
+            };
+            lottery.timer = setTimeout(roll, lottery.speed); //循环调用
+        }
+        return false;
+    }
+    var click = false;
+    window.onload = function() {
+        lottery.init('lottery');
+        $('.draw-btn').click(function() {
+            if(click) { //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
+                return false;
+            } else {
+                lottery.speed = 100;
+                roll(); //转圈过程不响应click事件，会将click置为false
+                click = true; //一次抽奖完成后，设置click为true，可继续抽奖
+                return false;
+            }
+        });
+    };
+
+</script>
+</html>

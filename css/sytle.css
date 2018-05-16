@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, iframe, map, font, img, a img, samp, strong, hr, h1, h2, h3, h4, h5, h6, b, p, blockquote, a, address, code, dl, dt, dd, ol, ul, li, form, label, table, tr, td, th {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-weight: normal;
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+input,select{
+    font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+i {
+    font-style: normal;
+}
+a {
+blr:expression(this.onFocus=this.blur());
+}
+a:focus {
+    outline: none;
+}
+a.hidefocus {
+    outline: none
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+input[type=text],input[type=submit], input[type=button] {
+    -webkit-appearance: none; /*去除iPhone input默认样式}*/
+}
+input{
+    outline: none
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    overflow: hidden;
+
+}
+.clearfix{
+    zoom: 1;
+}
+img {
+    border:none;
+    width: 100%;
+    display: block;
+}
+body {
+    min-width: 320px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    background-size: 100%;
+    padding-bottom:0;
+}
+*{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+}
+#box{
+    width: 100%;
+    font-size: 10px;
+}
+#nav{
+    width: 100%;
+    height: 8.64rem;
+}
+#nav img{
+    width: 100%;
+    height: 100%;
+}
+#thead{
+    width: 100%;
+    height: 0.18rem;
+}
+#thead img{
+    width: 100%;
+    height: 100%;
+}
+#tbody{
+    width: 100%;
+    height: 100%;
+    background-color: #CD0603;
+}
+/*end*/
+/*choujiang*/
+main{padding-top: 0.6rem;}
+table {
+    width: 12.73rem;
+    height: 7.96rem;
+    margin: 0rem auto;
+    padding: 0.18rem 0px;
+    text-align: center;
+}
+.draw {
+    width: 13.06rem;
+    height: 8.4rem;
+    margin: 0 auto;
+    background-color: #A30502;
+}
+.draw .item {
+    width: 3.12rem;
+    height: 1.98rem;
+    background-color: #FFEDA3;
+}
+.draw .item img{
+    width: 100%;
+    height: 100%;
+}
+.draw .item.active {
+    background-color: #fff;
+}
+.draw .draw-btn {
+    height: 1.16rem;
+    border: none;
+    outline: none;
+}
+.draw-btn p{
+    font-size: 0.24rem;
+    color: white;
+    font-weight: bold;
+}
+.draw-btn p span{
+    font-size: 0.4rem;
+    color: #FFEDA3;
+}
+.layui-m-layer {
+    position: relative;
+    z-index: 19891014
+}
+.layui-m-layer * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+.layui-m-layermain,
+.layui-m-layershade {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+.layui-m-layershade {
+    background-color: rgba(0, 0, 0, .7);
+    pointer-events: auto
+}
+.layui-m-layermain {
+    display: table;
+    font-family: Helvetica, arial, sans-serif;
+    pointer-events: none
+}
+.layui-m-layermain .layui-m-layersection {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+}
+.layui-m-layerchild {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(255,255,255,0);
+    font-size: 0.14rem;
+    border-radius: 0.05rem;
+    box-shadow: 0 0 0.08rem rgba(0, 0, 0, .1);
+    pointer-events: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s
+}
+@-webkit-keyframes layui-m-anim-scale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+@keyframes layui-m-anim-scale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+.layui-m-anim-scale {
+    animation-name: layui-m-anim-scale;
+    -webkit-animation-name: layui-m-anim-scale
+}
+@-webkit-keyframes layui-m-anim-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(8rem);
+        transform: translateY(8rem)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+@keyframes layui-m-anim-up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(8rem);
+        transform: translateY(8rem)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+.layui-m-anim-up {
+    -webkit-animation-name: layui-m-anim-up;
+    animation-name: layui-m-anim-up
+}
+.layui-m-layer0 .layui-m-layerchild {
+    width: 90%;
+    max-width: 6.4rem;
+}
+.layui-m-layer1 .layui-m-layerchild {
+    border: none;
+    border-radius: 0
+}
+.layui-m-layer2 .layui-m-layerchild {
+    width: auto;
+    max-width: 2.6rem;
+    min-width: 0.4rem;
+    border: none;
+    background: 0 0;
+    box-shadow: none;
+    color: #fff
+}
+.layui-m-layerchild h3 {
+    padding: 0 0.1rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.16rem;
+    font-weight: 400;
+    border-radius: 0.05rem 0.05rem 0 0;
+    text-align: center
+}
+.layui-m-layerbtn span,
+.layui-m-layerchild h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+.layui-m-layercont {
+    padding: 0.5rem 0.3rem;
+    line-height: 0.22rem;
+    text-align: center
+}
+.layui-m-layer1 .layui-m-layercont {
+    padding: 0;
+    text-align: left;
+    position: relative;
+}
+.layui-m-layercont h1 {
+    color: #e04538;
+    position: absolute;
+    top: 1.14rem;
+    width: 1.2rem;
+    left: 50%;
+    margin-left: -0.6rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+.layui-m-layer2 .layui-m-layercont {
+    text-align: center;
+    padding: 0;
+    line-height: 0
+}
+.layui-m-layer2 .layui-m-layercont i {
+    width: 0.25rem;
+    height: 0.25rem;
+    margin-left: .08rem;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: layui-m-anim-loading 1.4s infinite ease-in-out;
+    animation: layui-m-anim-loading 1.4s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+.layui-m-layerbtn,
+.layui-m-layerbtn span {
+    position: relative;
+    text-align: center;
+    border-radius: 0 0 0.05rem .05rem
+}
+.layui-m-layer2 .layui-m-layercont p {
+    margin-top: 0.2rem
+}
+@-webkit-keyframes layui-m-anim-loading {
+    0%,
+    100%,
+    80% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+    }
+}
+@keyframes layui-m-anim-loading {
+    0%,
+    100%,
+    80% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+    }
+}
+.layui-m-layer2 .layui-m-layercont i:first-child {
+    margin-left: 0;
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s
+}
+.layui-m-layer2 .layui-m-layercont i.layui-m-layerload {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s
+}
+.layui-m-layer2 .layui-m-layercont>div {
+    line-height: 0.22rem;
+    padding-top: 0.07rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.14rem;
+}
+.layui-m-layerbtn {
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0;
+    border-top: 1px solid #D0D0D0;
+    background-color: #F2F2F2
+}
+.layui-m-layerend {
+    position: absolute;
+    right: 0.07rem;
+    top: 0.1rem;
+    width:0.3rem;
+    height: 0.3rem;
+    border: 0;
+    font-weight: 400;
+    background: 0 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    font-size: 0.3rem
+}
+.layui-m-layerend::after,
+.layui-m-layerend::before {
+    position: absolute;
+    left: 0.05rem;
+    top: 0.15rem;
+    content: '';
+    width: 0.18rem;
+    height: 0.01rem;
+    background-color: #999;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-radius: 0.03rem
+}
+.layui-m-layerend::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg)
+}
+body .layui-m-layer .layui-m-layer-footer {
+    position: fixed;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: 0 0
+}
+.layui-m-layer-footer .layui-m-layercont {
+    padding: 0.2rem;
+    border-radius: 0.05rem 0.05rem 0 0;
+    background-color: rgba(255, 255, 255, .8)
+}
+.layui-m-layer-footer .layui-m-layerbtn {
+    display: block;
+    height: auto;
+    background: 0 0;
+    border-top: none
+}
+
+body .layui-m-layer .layui-m-layer-msg {
+    width: auto;
+    max-width: 90%;
+    margin: 0 auto;
+    bottom: -1.5rem;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff
+}
+.layui-m-layer-msg .layui-m-layercont {
+    padding: 0.1rem 0.2rem
+}
+/*end*/
+.zjxx,.jp,.cj,.lj{
+    width: 13.06rem;
+    height: 3.76rem;
+    margin:0.34rem auto;
+    background-color: #A30502;
+}
+.zjxx h1{
+    padding-top: 0.37rem;
+    margin-left: 0.58rem;
+    font-size: 0.36rem;
+    color: #FFEDA3;
+}
+.myscroll { width: 11.72rem; height: 2.31rem; margin: 0.2rem auto 0; line-height: 0.231; overflow: hidden;font-size: 0.24rem}
+.myscroll ul{
+    margin-top: 0.58rem;
+}
+.myscroll li { height: 0.24rem; margin-left: 0.25rem;margin-top: 0.33rem;font-size: 0.24rem;color:#FFEDA3; }
+.myscroll li span{
+    margin-left: 1.52rem;
+}
+.myscroll li span:first-child{
+    padding-right: 1.7rem;
+}
+.jp{
+    height: 100%;
+    text-align:center;
+    margin-top: 0.63rem;
+}
+.kuai{
+    display: inline-block;
+    border-radius: 0.1rem;
+    background-color: #FFEDA3;
+    margin: 0.75rem auto 0;
+    text-align: center;
+    line-height: 0.85rem;
+    width: 3.25rem;
+    height: 0.85rem;
+    font-size: 0.42rem
+}
+.jp p{
+    margin-left: 0.79rem;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+    text-align: left !important;
+}
+.jp p:first-child{
+    margin-top: 0.66rem !important;
+}
+.cj{
+    text-align: center;
+   height: 100%;
+}
+.cj ul{
+    padding-top: 0.48rem;
+}
+.cj ul li{
+    /*height: 0.16rem;*/
+    width: 8.9rem;
+    padding-left: 0.81rem;
+    margin-top: 0.2rem;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+    text-align:left !important;
+}
+.lj{
+    height: 100%;
+    text-align: center;
+}
+.lja{
+    margin-top: 0.64rem;
+    padding-left: 0.81rem;
+    text-align: left !important;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+}
+.lja p{
+    margin-top: 0.16rem;
+}
+@media screen and (max-width: 1050px) {
+    /*.cj ul li{
+    height: 0.16rem;
+    width: 9.8rem;
+    padding-left: 0.81rem;
+    margin-top: 0.25rem;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+    text-align:left !important;
+}*/
+    }
+    @media screen and (max-width: 960px;) {
+   /* .cj ul li{
+    height: 0.16rem;
+    width: 16rem;
+    padding-left: 0.81rem;
+    margin-top: 0.25rem;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+    text-align:left !important;
+}*/
+.lj{
+    height: 7.3rem;
+    text-align: center;
+}
+.jp{
+    height: 6.03rem;
+    text-align:center;
+    margin-top: 0.63rem;
+}
+    }
+     @media screen and (max-width: 480px;) {
+/*    .cj ul li{
+    height: 0.16rem;
+    width: 30rem;
+    padding-left: 0.81rem;
+    margin-top: 0.25rem;
+    font-size: 0.22rem;
+    color: #FFEDA3;
+    text-align:left !important;
+}*/
+.lj{
+    height: 10rem;
+    text-align: center;
+}
+.jp{
+    height: 6.03rem;
+    text-align:center;
+    margin-top: 0.63rem;
+}
+    }
+    #xx{
+        width: 100%;
+        height: 10rem;
+        text-align: center;
+        line-height: 10rem;
+        background-color: rgba(0,0,0,.6);
+        position: fixed;
+        top: 0rem;  
+    }
+    #img1{
+        width: 3.14rem;
+        background-color: #FFEDA3;
+        display: block;
+        position: relative;
+        top: 0%;
+        left:-20%;
+    }
+    #btn{
+        width: 2rem;
+        height: 0.5rem;
+        margin-top: 0.2rem;
+        border-radius: 0.05rem;
+        background-color: #FFEDA3;
+        color:red;
+    }
